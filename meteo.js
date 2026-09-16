@@ -26,7 +26,7 @@ async function getWeatherData(cityNameQuery) {
 
         // Gestion de l'erreur : Ville introuvable
         if (!geoData.results || geoData.results.length === 0) {
-            statusMessage.textContent = "❌ Ville introuvable. Veuillez réessayer.";
+            statusMessage.textContent = "Ville introuvable. Veuillez réessayer.";
             return;
         }
 
@@ -60,6 +60,6 @@ async function getWeatherData(cityNameQuery) {
     } catch (error) {
 
         console.error(error);
-        statusMessage.textContent = "⚠️ Une erreur est survenue lors de la connexion.";
+        statusMessage.textContent = "Une erreur est survenue lors de la connexion.";
     }
 }
