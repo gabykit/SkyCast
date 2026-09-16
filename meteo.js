@@ -55,7 +55,7 @@ async function getWeatherData(cityNameQuery) {
 
         // Nettoyage de l'état de chargement et affichage de la carte
         statusMessage.textContent = "";
-        weatherResult.classList.remove('hidden');
+        tempResult.classList.remove('hidden');
 
     } catch (error) {
 
