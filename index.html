@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast - Météo en direct</title>
+    <link rel="stylesheet" href="meteo-style.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <h1>SkyCast Météo</h1>
+        
+        <!-- Barre de recherche -->
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Entrez une ville (ex: Kinshasa, Paris)...">
+            <button id="searchBtn">Rechercher</button>
+        </div>
+
+        <!-- Zone d'état -->
+        <div id="statusMessage" class="status"></div>
+
+        <!-- Carte de résultat météo -->
+        <div id="tempResult" class="temp-card hidden">
+            <h2 id="cityName">-</h2>
+            <div class="temp-display">
+                <span id="tempValue">--</span>°C
+            </div>
+            <p id="weatherDesc" class="desc">-</p>
+        </div>
+    </div>
+
+    <script src="meteo.js"></script>
+</body>
+</html>
